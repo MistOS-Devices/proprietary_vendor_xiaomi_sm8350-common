@@ -12316,6 +12316,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libmmosal",
+                "libheif",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -12487,6 +12488,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libwfdmmsrc_system",
     owner: "xiaomi",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -12627,6 +12629,7 @@ cc_prebuilt_library_shared {
                 "libwfdmminterface",
                 "libmedia_helper",
                 "libaudioclient",
+                "libaudiobase",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
                 "android.media.audio.common.types-V5-cpp",
